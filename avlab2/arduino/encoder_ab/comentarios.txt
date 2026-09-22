@@ -1,0 +1,4 @@
+Al realizar aproximadamente una vuelta completa del eje de salida, se obtuvieron
+alrededor de 925 cuentas. Debido a que se utilizó un motor distinto al especificado 
+en el laboratorio y el giro fue realizado manualmente, este valor se considera 
+experimental y aproximado.

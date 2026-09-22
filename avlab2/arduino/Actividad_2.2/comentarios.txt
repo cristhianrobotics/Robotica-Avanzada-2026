@@ -1,0 +1,34 @@
+El programa utiliza las señales A y B del encoder incremental para
+contabilizar los pulsos generados durante el giro del motor. 
+Cada 100 ms se calcula la diferencia entre el número de cuentas actuales y 
+las registradas en la medición anterior. Este incremento de cuentas permite estimar
+la velocidad de rotación del eje. Utilizando el valor experimental de aproximadamente 
+925 cuentas por revolución, las cuentas por segundo se convierten a velocidad angular en rad/s. 
+Durante la prueba se obtuvieron valores cercanos a 4.9–5.0 rad/s, lo que indica que el motor 
+mantuvo una velocidad aproximadamente constante.
+
+
+Cuentas: 125    Delta: 13    Velocidad: 0.883 rad/s
+Cuentas: 139    Delta: 14    Velocidad: 0.951 rad/s
+Cuentas: 153    Delta: 14    Velocidad: 0.951 rad/s
+
+925 cuentas ≈ 1 revolución
+
+
+cuentas/segundo
+       ↓
+divide entre 925 cuentas/rev
+       ↓
+revoluciones/segundo
+       ↓
+× 2π
+       ↓
+rad/s
+
+
+
+El objetivo de esta actividad fue utilizar el encoder incremental para medir la velocidad real 
+de giro del motor. A partir de los pulsos generados por los canales A y B, se calculó el incremento 
+de posición en un intervalo de tiempo y posteriormente la velocidad angular en rad/s. Esta medición
+permite obtener una señal de retroalimentación del motor, necesaria para implementar posteriormente 
+estrategias de control en lazo cerrado.
